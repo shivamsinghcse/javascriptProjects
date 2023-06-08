@@ -1,28 +1,17 @@
-function add(){ 
-    let num1 = document.getElementById('num1').value;
-    let number1 = parseFloat(num1);
-    let num2 = document.getElementById('num2').value;
-    let number2 = parseFloat(num2);
-        document.getElementById('result').innerHTML=number1 + number2;
-    } 
-    function sub(){ 
-    let num1 = document.getElementById('num1').value;
-    let number1 = parseFloat(num1);
-    let num2 = document.getElementById('num2').value;
-    let number2 = parseFloat(num2);
-        document.getElementById('result').innerHTML=number1 - number2;
-    } 
-    function mul(){ 
-    let num1 = document.getElementById('num1').value;
-    let number1 = parseFloat(num1);
-    let num2 = document.getElementById('num2').value;
-    let number2 = parseFloat(num2);
-        document.getElementById('result').innerHTML=number1 * number2;
-    } 
-    function divi(){ 
-    let num1 = document.getElementById('num1').value;
-    let number1 = parseFloat(num1);
-    let num2 = document.getElementById('num2').value;
-    let number2 = parseFloat(num2);
-        document.getElementById('result').innerHTML=number1 / number2;
-    } 
+function exp(exprestion){
+    let num1 =parseFloat(document.getElementById('num1').value);
+    let num2 =parseFloat(document.getElementById('num2').value);
+    switch(exprestion){
+        
+        case '+': document.getElementById('result').innerHTML = num1+num2;
+        break;
+        case '-':document.getElementById('result').innerHTML = num1 - num2;
+        break;
+        case '*':document.getElementById('result').innerHTML = num1 * num2;
+        break;
+        case '/':document.getElementById('result').innerHTML = num1 / num2;
+        break;
+    }
+
+
+}
